@@ -4,38 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>About Me</title>
 </head>
-<header>
-    <a class="skip-link" href="#main">Skip to content</a>
-</header>
-<main>
-    <h1>A Little About Me</h1>
+    
     <body>
-        <nav class="tab">
-            <!-- <button onclick = "window.location.href='index.html';">Home</button>
-            <button onclick = "window.location.href='aboutMe.html';">About Me</button>
-            <button onclick = "window.location.href='firstPost.html';">Top 3's</button> -->
-            <a href="index.html">Home</a>
-            <a href="aboutMe.html">About Me</a>
-            <a href="firstPost.html">Top 3's</a>
-        </nav>
+        <header>
+            <a class="skip-link" href="#main">Skip to content</a>
+            <nav class="flex_tab">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="firstPost.html">Top 3's</a>
+            </nav>
+            <h1>A Little About Me</h1>
+        </header>
+        
     </body>
-    <p> My name is Lemma Samaha and I'm a computer science major with a minor in UX design at the University of Michigan. Outside of school I love discovering new movies, TV shows, and music, so I created this site to share some of my favorites with you!</p>
-    <img src="images/michigangame.jpeg" alt="My sister and I at a Mcihigan Game">Michigan Game</img>
-    <img src="images/cse.jpg" alt="University of Michigan Computer Science and Engineering">CSE</img>
-    <img src="images/ux.jpg" alt="Elements of UX design">UX Design</img>
-    <h2>Where I've Been</h2>
-    <h3>Palestine</h3>
-    <p>One of the favorite places I've been to is Palestine. Whenever my family visits, we stay with my mom's side of the family and visit places like Akko, Jerusalem, and Haifa. My cousins and I stay up all night playing cards, while we catch up on everything that's happened since we last saw each other.</p>
-    <img src="images/majdalkrum.jpeg" alt="Majd Al-Kurum">Majd Al-Kurum</img>
-    <img src="images/akka.jpg" alt="Akka">Akka</img>
-    <img src="images/akkacats.jpeg" alt="Cats sitting on electrical boxes in Akka">Cats in Akka</img>
-    <h3>Hawaii</h3>
-    <p>Another one of my favorite places is Hawaii. I went recently over spring break and it's quite literally paradise on Earth. We went snorkeling, whale watching, and did Road to Hana. Definitely a place to see in your lifetime, but make sure to "respect the 'aina".</p>
-    <img src="images/overlook.jpeg" alt="Keopuka rock overlook in Garden of Eden">Keopuka Rock Overlook</img>
-    <img src="images/ocean.jpeg" alt="View of ocean and cliffs">View of Ocean</img>
-    <img src="images/rainbow.jpeg" alt="Field of grass with rainbow in the sky">Rainbow</img>
-
-</main>
+    <main id="main">
+        <div class="about_me">
+            <p> My name is Lemma Samaha and I'm a computer science major with a minor in UX design at the University of Michigan. Outside of school I love discovering new movies, TV shows, and music, so I created this site to share some of my favorites with you!</p>
+            <figure class="item">
+                <img src="images/michigangame.jpeg" alt="My sister and I at a Michigan Game">
+                <figcaption class="caption">Michigan Game</figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/cse.jpg" alt="University of Michigan Computer Science and Engineering">
+                <figcaption class="caption">CSE</figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/ux.jpg" alt="Elements of UX Design">
+                <figcaption class="caption">UX Design</figcaption>
+            </figure>
+        </div>
+        <h2>Where I've Been</h2>
+            <div class="where">
+                <h3>Palestine</h3>
+                <p>One of the favorite places I've been to is Palestine. Whenever my family visits, we stay with my mom's side of the family and visit places like Akko, Jerusalem, and Haifa. My cousins and I stay up all night playing cards, while we catch up on everything that's happened since we last saw each other.</p>
+                <figure class="item">
+                    <img src="images/majdalkrum.jpeg" alt="Majd Al-Kurum">
+                    <figcaption class="caption">Majd Al-Kurum</figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="images/akka.jpg" alt="Akka">
+                    <figcaption class="caption">Akka</figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="images/akkacats.jpeg" alt="Cats sitting on electrical boxes in Akka">
+                    <figcaption class="caption">Cats in Akka</figcaption>
+                </figure>
+                <h3>Hawaii</h3>
+                <p>Another one of my favorite places is Hawaii. I went recently over spring break and it's quite literally paradise on Earth. We went snorkeling, whale watching, and did Road to Hana. Definitely a place to see in your lifetime, but make sure to "respect the 'aina".</p>
+                <figure class="item">
+                    <img src="images/overlook.jpeg" alt="Keopuka rock overlook in Garden of Eden">
+                    <figcaption class="caption">Keopuka Rock Overlook</figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="images/ocean.jpeg" alt="View of ocean and cliffs">
+                    <figcaption class="caption">View of Ocean</figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="images/rainbow.jpeg" alt="Field of grass with rainbow in the sky">
+                    <figcaption class="caption">Rainbows</figcaption>
+                </figure>
+            </div>
+    </main>
 </html>
