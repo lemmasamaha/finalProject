@@ -1,39 +1,4 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-weight: bold; */
-}
-
-img {
-    height: 250px;
-    width: 250px;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 30px;
-    border: 5px solid #000000;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-h1, h2, h3, p {
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-}
-
-.movie_grid, .tvshow_grid, .album_grid, .about_me, .where {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-figure.item {
+/* figure.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -42,6 +7,44 @@ figure.item {
 .caption {
     display: block;
     padding: 5px;
+} */
+
+/* Albums Page CSS */
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2, p, footer, nav {
+    padding: 5px;
+    margin: 10px;
+}
+
+a {
+    padding: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.album_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+}
+
+.list {
+    /* float: left; */
+    align-self: center;
+    font-size: 20px;
 }
 
 .flex_tab {
@@ -50,10 +53,208 @@ figure.item {
 }
 
 .flex_tab > a {
-    background-color: #f1f1f1;
-    padding: 2px;
-    margin: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* padding: 2px;
+    margin: 2px; */
 }
 
+/* Image Styling */
+
+img {
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin-left: auto; 
+    margin-right: auto;
+    /* margin: 20px; */
+    padding: 5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.resize {
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000000;
+}
+
+.resize2 {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000000;
+}
+
+.tour {
+    width: 300px;
+    height: 240px;
+    padding: 5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.era {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+figure, .caption, ol, h1 {
+    padding: 5px;
+    margin: 10px;
+}
+
+.caption {
+    text-align: center;
+}
+
+.debut_item, .debut_list{
+    background-color:#165A2F;
+}
+
+.fearless_item, .fearless_list, .fearless {
+    background-color: #5E4A2C; /*#B28E56*/
+}
+
+.speaknow_item, .speaknow_list, .speaknow {
+    background-color: #8C3679; /*#9B3C88*/
+}
+
+.red_item, .red_list, .red {
+    background-color: #6B0503;
+}
+
+.nineteen_item, .nineteen_list, .nineteen {
+    background-color: #405A6D; /*#B29E9A , #405A6D*/ 
+} 
+
+.reputation_item, .reputation_list, .reputation {
+    background-color: #6B6B6B;
+}
+
+.lover_item, .lover_list, .lover {
+    background-color: #A70154; /*#FEB3D8*/
+}
+
+.folklore_item, .folklore_list, .folklore{
+    background-color: #575757;
+}
+
+.evermore_item, .evermore_list, .evermore {
+    background-color: #874121;
+}
+
+.midnights_item, .midnights_list, .midnights {
+    background-color: #4C577B;
+}
+
+.surprise {
+    background-color: #000000;
+}
+
+.debut_item, .debut_list, .fearless_item, .fearless_list, .fearless, .speaknow_item, .speaknow_list, .speaknow, .red_item, .red_list, .red, .nineteen_item, .nineteen_list, .nineteen, .reputation_item, .reputation_list, .reputation, .lover_item, .lover_list, .lover, .folklore_item, .folklore_list, .folklore, .evermore_item, .evermore_list, .evermore, .midnights_item, .midnights_list, .midnights, .surprise {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 700px) {
+
+    .debut_grid, .fearless_grid, .fearless, .speaknow_grid, .speaknow, .red_grid, .red, .nineteen_grid, .nineteen, .reputation_grid, .reputation, .lover_grid, .lover, .folklore_grid, .folklore, .evermore_grid, .evermore, .midnights_grid, .midnights, .surprise {
+        display: grid;
+        grid-template-columns: 1fr; /*1fr 1fr*/
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .tour {
+        width: 500px;
+        height: 350px;
+    }
+
+    .debut_grid { 
+        background-color: #165A2F;
+    }
+
+    .fearless_grid {
+        background-color: #5E4A2C;
+    }
+
+    .speaknow_grid {
+        background-color: #8C3679;
+    }
+
+    .red_grid {
+        background-color: #6B0503;
+    }
+
+    .nineteen_grid {
+        background-color: #405A6D;
+    }
+
+    .reputation_grid {
+        background-color: #6B6B6B;
+    }
+
+    .lover_grid {
+        background-color: #A70154;
+    }
+
+    .folklore_grid {
+        background-color: #575757;
+    }
+
+    .evermore_grid {
+        background-color: #874121
+    }
+
+    .midnights_grid {
+        background-color: #4C577B;
+    } 
+
+    .flex_tab {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: #000000;
+    }
+
+    .flex_tab > a {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .album_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .debut_grid, .fearless_grid, .fearless, .speaknow_grid, .speaknow, .red_grid, .red, .nineteen_grid, .nineteen, .reputation_grid, .reputation, .lover_grid, .lover, .folklore_grid, .folklore, .evermore_grid, .evermore, .midnights_grid, .midnights, .surprise {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*1fr 1fr*/
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .tour {
+        width: 500px;
+        height: 350px;
+    }
+}
 
 /*need to implement flex and grid better*/ 
